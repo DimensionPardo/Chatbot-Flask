@@ -1,0 +1,18 @@
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <h1>Chatbot</h1>
+        <form method="POST">
+            Introduce tu pregunta
+            <input type="text" name="pregunta"><br>
+            <input type="submit" value="Submit">
+        </form>
+        {% if answer %}
+        <hr>
+        <h2>Respuesta</h2>
+        <p>{{ answer }}</p>
+        {% endif %}
+    </body>
+</html>
+{% endblock %}
